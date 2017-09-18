@@ -29,7 +29,7 @@ package main.com.google;
  * 以及证明每一步的贪心选择一定属于某个最优方案。
  * 
  * Related Problem:
- * http://www.lintcode.com/zh-cn/problem/house-robber/
+ * https://leetcode.com/problems/house-robber/
  * 
  * @author andyli
  *

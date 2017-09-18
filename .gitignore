@@ -28,3 +28,5 @@ hs_err_pid*
 /bin/
 /.classpath
 /.project
+/algorithms.sublime-project
+/algorithms.sublime-workspace
