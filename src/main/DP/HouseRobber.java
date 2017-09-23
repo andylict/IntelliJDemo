@@ -17,13 +17,13 @@ public class HouseRobber {
 	// method 1: dp[i]: 前i个房子 最多打劫多少钱
 	public long rob(int[] nums) {
 		if (nums == null || nums.length == 0) return 0;
-        long[] dp = new long[nums.length + 1];
-        dp[0] = 0;
-        dp[1] = nums[0];
-        for (int i = 2; i <= nums.length; i++) {
-            dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i - 1]); // max(不抢当前房子，抢当前房子)
-        }
-        return dp[nums.length];
+		long[] dp = new long[nums.length + 1];
+		dp[0] = 0;
+		dp[1] = nums[0];
+		for (int i = 2; i <= nums.length; i++) {
+			dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i - 1]); // max(不抢当前房子，抢当前房子)
+		}
+		return dp[nums.length];
 	}
 	
 	// method 2: 滚动数组 rolling array 优化
